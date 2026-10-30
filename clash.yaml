@@ -1,0 +1,1029 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: true
+external-controller: 127.0.0.1:9090
+unified-delay: false
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://223.5.5.5/dns-query
+  - https://1.12.12.12/dns-query
+  fallback:
+  - https://8.8.8.8/dns-query
+  - https://1.1.1.1/dns-query
+proxies:
+- name: 移动-LHR-01
+  type: vless
+  server: 172.67.204.153
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-01
+  type: vless
+  server: 104.19.150.55
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-02
+  type: vless
+  server: 104.21.86.177
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-03
+  type: vless
+  server: 104.17.110.241
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-04
+  type: vless
+  server: 104.17.101.107
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-01
+  type: vless
+  server: 104.17.140.181
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-02
+  type: vless
+  server: 104.17.130.34
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-LAX-01
+  type: vless
+  server: 104.17.34.51
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-03
+  type: vless
+  server: 104.17.157.67
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-04
+  type: vless
+  server: 104.17.131.93
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-AMS-01
+  type: vless
+  server: 104.25.20.157
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-LAX-01
+  type: vless
+  server: 104.17.132.89
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-AMS-02
+  type: vless
+  server: 172.67.73.144
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-AMS-03
+  type: vless
+  server: 104.25.7.210
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-LAX-02
+  type: vless
+  server: 162.159.234.204
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-01
+  type: vless
+  server: 2606:4700:9ae9::37e3:f2ce
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-02
+  type: vless
+  server: 2606:4700:9a9a::9ca8:bd72
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-03
+  type: vless
+  server: 2606:4700:90d8::a317:6207
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-04
+  type: vless
+  server: 2606:4700:91b9::701d:7c07
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-05
+  type: vless
+  server: 2606:4700:9c67::1009:8ece
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-06
+  type: vless
+  server: 2606:4700:9a95::a24d:14d3
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-07
+  type: vless
+  server: 2606:4700:9b07::e9c5:f229
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-08
+  type: vless
+  server: 2606:4700:9647::3add:1189
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-09
+  type: vless
+  server: 2606:4700:9b0b::45e4:205f
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-10
+  type: vless
+  server: 2606:4700:8de7::85d1:16ff
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-11
+  type: vless
+  server: 2a06:98c1:3104::4919:d00d
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-12
+  type: vless
+  server: 2a06:98c1:310e::b7ac:a324
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-13
+  type: vless
+  server: 2a06:98c1:3105::2b51:96a8
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-14
+  type: vless
+  server: 2a06:98c1:3108::6ef4:17d0
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-15
+  type: vless
+  server: 2606:4700:4403::5312:982
+  port: 443
+  uuid: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  tls: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-LHR-02
+  type: trojan
+  server: 172.67.204.153
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-05
+  type: trojan
+  server: 104.19.150.55
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-06
+  type: trojan
+  server: 104.21.86.177
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-07
+  type: trojan
+  server: 104.17.110.241
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 移动-HKG-08
+  type: trojan
+  server: 104.17.101.107
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-05
+  type: trojan
+  server: 104.17.140.181
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-06
+  type: trojan
+  server: 104.17.130.34
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-LAX-02
+  type: trojan
+  server: 104.17.34.51
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-07
+  type: trojan
+  server: 104.17.157.67
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 联通-SJC-08
+  type: trojan
+  server: 104.17.131.93
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-AMS-04
+  type: trojan
+  server: 104.25.20.157
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-LAX-03
+  type: trojan
+  server: 104.17.132.89
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-AMS-05
+  type: trojan
+  server: 172.67.73.144
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-AMS-06
+  type: trojan
+  server: 104.25.7.210
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: 电信-LAX-04
+  type: trojan
+  server: 162.159.234.204
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-16
+  type: trojan
+  server: 2606:4700:9ae9::37e3:f2ce
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-17
+  type: trojan
+  server: 2606:4700:9a9a::9ca8:bd72
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-18
+  type: trojan
+  server: 2606:4700:90d8::a317:6207
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-19
+  type: trojan
+  server: 2606:4700:91b9::701d:7c07
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-20
+  type: trojan
+  server: 2606:4700:9c67::1009:8ece
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-21
+  type: trojan
+  server: 2606:4700:9a95::a24d:14d3
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-22
+  type: trojan
+  server: 2606:4700:9b07::e9c5:f229
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-23
+  type: trojan
+  server: 2606:4700:9647::3add:1189
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-24
+  type: trojan
+  server: 2606:4700:9b0b::45e4:205f
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-25
+  type: trojan
+  server: 2606:4700:8de7::85d1:16ff
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-26
+  type: trojan
+  server: 2a06:98c1:3104::4919:d00d
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-27
+  type: trojan
+  server: 2a06:98c1:310e::b7ac:a324
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-28
+  type: trojan
+  server: 2a06:98c1:3105::2b51:96a8
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-29
+  type: trojan
+  server: 2a06:98c1:3108::6ef4:17d0
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+- name: IPv6优选-30
+  type: trojan
+  server: 2606:4700:4403::5312:982
+  port: 443
+  password: bac4c07c-01df-4091-8ad4-81c570f2591e
+  udp: true
+  client-fingerprint: chrome
+  servername: guang-9ny.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: guang-9ny.pages.dev
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 移动-LHR-01
+  - 移动-HKG-01
+  - 移动-HKG-02
+  - 移动-HKG-03
+  - 移动-HKG-04
+  - 联通-SJC-01
+  - 联通-SJC-02
+  - 联通-LAX-01
+  - 联通-SJC-03
+  - 联通-SJC-04
+  - 电信-AMS-01
+  - 电信-LAX-01
+  - 电信-AMS-02
+  - 电信-AMS-03
+  - 电信-LAX-02
+  - IPv6优选-01
+  - IPv6优选-02
+  - IPv6优选-03
+  - IPv6优选-04
+  - IPv6优选-05
+  - IPv6优选-06
+  - IPv6优选-07
+  - IPv6优选-08
+  - IPv6优选-09
+  - IPv6优选-10
+  - IPv6优选-11
+  - IPv6优选-12
+  - IPv6优选-13
+  - IPv6优选-14
+  - IPv6优选-15
+  - 移动-LHR-02
+  - 移动-HKG-05
+  - 移动-HKG-06
+  - 移动-HKG-07
+  - 移动-HKG-08
+  - 联通-SJC-05
+  - 联通-SJC-06
+  - 联通-LAX-02
+  - 联通-SJC-07
+  - 联通-SJC-08
+  - 电信-AMS-04
+  - 电信-LAX-03
+  - 电信-AMS-05
+  - 电信-AMS-06
+  - 电信-LAX-04
+  - IPv6优选-16
+  - IPv6优选-17
+  - IPv6优选-18
+  - IPv6优选-19
+  - IPv6优选-20
+  - IPv6优选-21
+  - IPv6优选-22
+  - IPv6优选-23
+  - IPv6优选-24
+  - IPv6优选-25
+  - IPv6优选-26
+  - IPv6优选-27
+  - IPv6优选-28
+  - IPv6优选-29
+  - IPv6优选-30
+- name: ♻️ 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 移动-LHR-01
+  - 移动-HKG-01
+  - 移动-HKG-02
+  - 移动-HKG-03
+  - 移动-HKG-04
+  - 联通-SJC-01
+  - 联通-SJC-02
+  - 联通-LAX-01
+  - 联通-SJC-03
+  - 联通-SJC-04
+  - 电信-AMS-01
+  - 电信-LAX-01
+  - 电信-AMS-02
+  - 电信-AMS-03
+  - 电信-LAX-02
+  - IPv6优选-01
+  - IPv6优选-02
+  - IPv6优选-03
+  - IPv6优选-04
+  - IPv6优选-05
+  - IPv6优选-06
+  - IPv6优选-07
+  - IPv6优选-08
+  - IPv6优选-09
+  - IPv6优选-10
+  - IPv6优选-11
+  - IPv6优选-12
+  - IPv6优选-13
+  - IPv6优选-14
+  - IPv6优选-15
+  - 移动-LHR-02
+  - 移动-HKG-05
+  - 移动-HKG-06
+  - 移动-HKG-07
+  - 移动-HKG-08
+  - 联通-SJC-05
+  - 联通-SJC-06
+  - 联通-LAX-02
+  - 联通-SJC-07
+  - 联通-SJC-08
+  - 电信-AMS-04
+  - 电信-LAX-03
+  - 电信-AMS-05
+  - 电信-AMS-06
+  - 电信-LAX-04
+  - IPv6优选-16
+  - IPv6优选-17
+  - IPv6优选-18
+  - IPv6优选-19
+  - IPv6优选-20
+  - IPv6优选-21
+  - IPv6优选-22
+  - IPv6优选-23
+  - IPv6优选-24
+  - IPv6优选-25
+  - IPv6优选-26
+  - IPv6优选-27
+  - IPv6优选-28
+  - IPv6优选-29
+  - IPv6优选-30
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+rules:
+- GEOIP,CN,🎯 全球直连
+- MATCH,🚀 节点选择
